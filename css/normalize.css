@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: inherit};
+input {outline: none;}
+ul, ol, li {list-style: none;}
+img {vertical-align: top};
+a {text-decoration: none;}
