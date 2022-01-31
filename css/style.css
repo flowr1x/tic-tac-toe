@@ -1,6 +1,5 @@
 html, body {
     height: 100%;
-
     font-family: "Arial";
     font-size: 14px;
     font-weight: 400;
@@ -10,6 +9,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.header__name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.board {
+    position: relative;
 }
 td {
     border: 2px solid #333;
@@ -24,6 +31,7 @@ td {
   
 table {
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 table tr td:first-child {
@@ -39,4 +47,30 @@ tr td:last-child {
 
 table tr:last-child td {
     border-bottom: none;
+}
+.setting {
+    display: flex;
+}
+.btn {
+    height: 60px;
+    width: 60px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    box-shadow: 0px 5px 1px #333;
+}
+.btn:active {
+    top: 3px;
+    box-shadow: 0px 2px 1px #333;
+}
+.player__btn {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.setting > *:not(:last-child) {
+    margin-right: 20px;
 }
